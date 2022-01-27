@@ -80,6 +80,7 @@ public class RailroadVersion
 
 compileJava {
     dependsOn generateSrc
+    options.compilerArgs.addAll(['--release','8'])
 }
 
 task generateLicense {
